@@ -1,0 +1,355 @@
+@font-face {
+  font-family: extrabold;
+  src: url(Sublima-ExtraBold.otf);
+}
+@font-face {
+  font-family: extralight;
+  src: url(Sublima-ExtraLight.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  padding: 5px;
+  font-family: extrabold;
+}
+
+main {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-rows: 30% 20% 1% 20% 23%;
+  grid-template-columns: 1fr 0.9fr 0.9fr 1fr;
+  grid-template-areas:
+    "top-left top-center-one top-center-two top-right"
+    "top-left center center top-right"
+    "center-left center center top-right"
+    "center-left center center bottom-right"
+    "bottom-left bottom-left bottom-center bottom-right";
+  gap: 15px;
+}
+.top-left {
+  background-image: url(Gemini_Generated_Image_rh83m9rh83m9rh83.png);
+  background-position: center;
+  background-size: cover;
+  grid-area: top-left;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.top-center-one {
+  background-color: rgb(253, 214, 2);
+  grid-area: top-center-one;
+  padding: 2% 4% 2% 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 1%;
+}
+.line-lower-space{
+  font-size: small;
+}
+
+.top-center-two {
+  background-color: white;
+  grid-area: top-center-two;
+}
+.top-right {
+  background-color: #ffffff;
+  grid-area: top-right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  gap: 1%;
+}
+.top-right-one{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: medium;
+  margin-left: 5%;
+  font-family: extralight;
+}
+
+.top-right-two{
+  font-size: x-large;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 5%;
+}
+.top-right-one svg{width: 10%;}
+
+.top-right-three{
+  width: 90%;
+}
+.center-left {
+  background-color: #ffffff;
+  grid-area: center-left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding-left: 4%;
+}
+.center {
+  background-color: rgb(253, 248, 227);
+  grid-area: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center img {
+  width: 60%;
+  height: auto;
+}
+.bottom-left {
+  background-color: #ECB1A3;
+  grid-area: bottom-left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  gap: 15%;
+}
+.bottom-left-two{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5%;
+}
+
+.bottom-left img{
+  width: 30%;
+  border-radius: 15px;
+}
+.bottom-left-two-one{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.persons{
+  width: 50%;
+  height: auto;
+}
+.persons img{
+  border-radius: 50%;
+  width: 25%;
+  border: 0.5px solid #ffffff;
+}
+.image-one{
+  z-index: 2;
+}
+.image-two{
+  transform: translate(-20%);
+  z-index: 1;
+}
+.image-three{
+  transform: translate(-40%);
+  z-index: 0;
+}
+.bottom-center {
+  grid-area: bottom-center;
+  background-image: url(person\ bg.png);
+  background-size: 120%;
+  background-position: center 10%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.bottom-center img{
+  position: absolute;
+  width: auto;
+  height: 110%;
+  bottom: calc(0px - 0%);
+}
+.bottom-right {
+  background-image: url(Gemini_Generated_Image_uh2muduh2muduh2m.png);
+  background-size: 120%;
+  background-position: center 10%;
+  grid-area: bottom-right;
+}
+main div {
+  border-radius: 15px;
+}
+
+.top_left_top_logo {
+  width: 20%;
+  height: auto;
+  position: absolute;
+  left: 2%;
+  top: 2%;
+}
+
+.top_left_cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  gap: 5%;
+  position: relative;
+}
+.cards svg {
+  width: 3.5em;
+  height: auto;
+  background-color: orange;
+  padding: 0.2rem;
+  border-radius: 50%;
+}
+
+.cards h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem 2rem 1rem;
+  margin-bottom: 4%;
+  gap: 10%;
+  color: white;
+  padding: 2% 1% 2% 1%;
+  backdrop-filter: blur(15px);
+  background-color: rgba(15, 15, 15, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+.center-left div svg{
+    width: 4em;
+}
+.center-left h1{
+    font-size: 1.8rem;
+    font-weight: 20px;
+    line-height: 0.8;
+}
+.center-left-lower-part{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.top-center-one svg{
+    width: 30%;
+    height: auto;
+}
+
+.icons-top-center-one{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10%;
+    height: 10%;
+}
+.icons-top-center-one svg{
+  height: auto;
+}
+.top-center-two{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.top-center-two div{
+  width: 90%;
+  height: auto;
+  margin-left: 4%;
+}
+.top-center-two-loading-line{
+  width: 80%;
+  height: 5%;
+}
+
+.heading-one-center p{
+  font-family: extralight;
+  text-decoration: none;
+  font-size: small;
+  font-weight: 100;
+}
+.heading-one-center h1{
+  font-family: extrabold;
+  font-size: 300%;
+}
+
+.heading-two-center {
+  font-family: extralight;
+
+}
+
+
+.bottom-right-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(100% - 8%);
+  width: calc(100%-8%);
+  margin: 4%;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+
+  padding-top: 1%;
+}
+.bottom-right-one{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottom-right-one h1{
+  font-size: medium;
+  font-family: extralight;
+}
+.bottom-right-one-logo{
+  display: flex;
+  align-items: center;
+  font-family: extralight;
+  font-size: small;
+  gap: 2%;
+}
+.bottom-right-one-logo svg{
+  width: 10%;
+}
+
+.bottom-right-two{
+  height: 40%;
+  width: calc(100% - 40%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  color: #ffffff;
+}
+.search-logo-side-text{
+  font-size: 10px;
+}
+.search-logo-side-text button{
+  border: none;
+  margin-top: 10%;
+  padding: 8% 12% 8% 12%;
+  border-radius: 15px;
+  background-color: rgb(253, 214, 2);
+  font-family: extrabold;
+}
+
+
