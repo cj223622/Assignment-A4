@@ -1,0 +1,544 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.roboto-cj {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  font-family: roboto-cj;
+}
+
+.grid-all {
+  padding: 0.5%;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 22% 20% 7% 27% 22%;
+  grid-template-rows: 29% 24% 7% 18% 18%;
+  grid-template-areas:
+    "upper-left upper-center-one upper-center-one upper-center-two upper-right"
+    "upper-left center center center upper-right"
+    "lower-left center center center upper-right"
+    "lower-left center center center lower-right"
+    "lower-left lower-center-one lower-center-two lower-center-two lower-right";
+}
+.upper-left ,.upper-center-one,.upper-center-two,.upper-right,.center,.lower-left,.lower-center-one,.lower-center-two,.lower-right{
+    border-radius: 15px;
+}
+/* upperleft css */
+.upper-left {
+  background-color: #ffe6eb;
+  grid-area: upper-left;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.upper-left-one {
+  height: 20%;
+  width: 90%;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.upper-left-one svg {
+  width: 10%;
+  height: auto;
+}
+.upper-left-two {
+  height: 40%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  position: relative;
+}
+.persentage {
+  position: absolute;
+  font-size: x-large;
+}
+
+.uooer-left-three {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  justify-content: space-between;
+  column-gap: 15%;
+}
+.upper-left-three * {
+  width: 100%;
+  height: 40%;
+  margin-left: 10%;
+}
+.upper-left-three h1 {
+  font-size: xxx-large;
+}
+.upper-left-three h4 {
+  font-size: x-large;
+}
+.upper-left-three button {
+  background-color: #fad9e0;
+  border: none;
+  border-radius: 20px;
+  width: 60%;
+  white-space: nowrap;
+  padding: 0 4%0 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upper-left-three button svg {
+  width: 10px;
+  height: auto;
+}
+
+/* uppercenter one css */
+.upper-center-one {
+  background-color: white;
+  grid-area: upper-center-one;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 1% 0 1% 0;
+}
+.upper-center-one-one {
+  width: 90%;
+  height: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.upper-center-one-one h1 {
+  font-size: 6em;
+  text-transform: bold;
+}
+.upper-center-one-one svg {
+  max-width: 20%;
+}
+.upper-center-one-two {
+  height: 35%;
+  font-size: 2em;
+  align-self: flex-start;
+  margin-left: 12%;
+}
+.upper-center-one-three {
+  height: 20%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  margin-left: 15%;
+  gap: 5%;
+  justify-content: flex-start;
+}
+.upper-center-one-three button {
+  width: 30%;
+  border: 0.2px solid #fad9e0;
+  background-color: white;
+  padding: 0 6% 0 6%;
+  border-radius: 15px;
+  color: #f8899f;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.upper-center-one-three button svg {
+  width: 50%;
+  height: 50%;
+}
+.upper-center-one-three p {
+  text-transform: bold;
+  opacity: 0.5;
+}
+
+/* uppercenter two css */
+.upper-center-two {
+  background-color: white;
+  grid-area: upper-center-two;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  padding: 3% 0 0 10%;
+}
+.upper-center-two-one {
+  font-size: xx-large;
+  line-height: 2em;
+}
+.upper-center-two-two {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.user-upper-center-two {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+.upper-center-two-inner-h1 {
+  color: greenyellow;
+}
+.upper-center-two-inner-h2 {
+  opacity: 0.6;
+}
+
+/* upper right css */
+.upper-right {
+  background-color: white;
+  grid-area: upper-right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 8% 5% 8% 5%;
+  overflow: hidden;
+}
+.upper-right-one {
+  display: flex;
+  flex-direction: column;
+  gap: 8%;
+  height: 48%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 0;
+}
+.upper-right-one h1 {
+  white-space: nowrap;
+  font-size: 2.5em;
+}
+.upper-right-one-images {
+  align-self: center;
+  padding-left: 10%;
+}
+.upper-right-one-images img {
+  width: 18%;
+  height: auto;
+  border-radius: 50%;
+  border: 0.5px solid white;
+}
+.upper-right-one-images img:nth-child(2) {
+  transform: translate(-25%);
+}
+.upper-right-one-images img:nth-child(3) {
+  transform: translate(-45%);
+}
+.upper-right-one-images img:nth-child(4) {
+  transform: translate(-65%);
+}
+.upper-right-one-images img:nth-child(5) {
+  transform: translate(-85%);
+}
+.upper-right-two{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    height: 45%;
+}
+.upper-right-two-one{
+    font-size: x-large;
+}
+.upper-right-two-two{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: auto;
+}
+.followers{
+    position: absolute;
+    width: 30%;
+    height: auto;
+    left: 150%;
+    bottom: 0.2px;
+}
+
+
+
+/* center grid css */
+.center {
+  background-color: #fad9e0;
+  grid-area: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.curcle{
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(135deg, #ffd3dd 0%, #fba6bc 100%);
+    opacity: 0.3;
+    border-radius: 50%;
+    border: none;
+}
+.center-img{
+    position: absolute;
+    align-self: center;
+    width: 55%;
+    height: auto;
+    bottom: 0;
+}
+.one-img{
+    position: absolute;
+    border-radius: 15px;
+    width: 20%;
+    left: 9%;
+    top: 15%;
+}
+.two-img{
+    position: absolute;
+    border-radius: 20px;
+    width: 15%;
+    height: auto;
+    bottom: 20%;
+    left: 15%;
+}
+.three-img{
+    position: absolute;
+    border-radius: 15px;
+    width: 20%;
+    height: auto;
+    right: 12%;
+    top: 8%;
+}
+.four-img{
+    position: absolute;
+    border-radius: 15px;
+    width: 18%;
+    height: auto;
+    bottom: 2%;
+    right: 14%;
+}
+
+
+/* lower left grid css */
+.lower-left {
+  background-color: #1E1E1E;
+  grid-area: lower-left;
+  display: flex;
+  flex-direction: column;
+  gap: 4%;
+  color: #ffffff;
+  padding: 4% 6% 4% 6%;
+
+}
+.hi{
+    color: #fba6bc;
+}
+.lower-left-one{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.lower-left-one h1{
+    font-size: 200%;
+}
+.lower-left-one svg{
+    background-color: #524f4f;
+    width: 18%;
+    height: 60%;
+    border-radius: 15px;
+    opacity: 0.6;
+}
+.lower-left-two{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8%;
+}
+.lower-left-two img{
+    width: 40%;
+    border-radius: 15px;
+}
+.lower-left-three{
+    position: relative;
+}
+.lower-left-three img{
+    width: 15%;
+    border-radius: 50%;
+    border: 0.1px solid white;
+}
+.lower-left-three img:nth-child(2){
+    transform: translate(-25%);
+}
+.lower-left-three img:nth-child(3){
+    transform: translate(-45%);
+}
+
+
+/* lower center grid css */
+.lower-center-one {
+  background-color: #ffffff;
+  grid-area: lower-center-one;
+  display: flex;
+  flex-direction: column;
+  padding: 2% 4% 2% 4%;
+  gap: 5%;
+}
+.lower-center-one-one{
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: larger;
+}
+.lower-center-one-one svg{
+   position: absolute;
+   top: 1%;
+   left: 80%;
+}
+.lower-center-one-two{
+    font-size: large;
+    opacity: 0.6;
+    display: flex;
+    align-items: flex-start;
+}
+.lower-center-one-three{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.lower-color{
+    width: 2.5em;
+    height: 2.5em;
+    background-color: black;
+    border-radius: 15px;
+}
+.lower-center-one-four{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.lower-center-one-four h4{
+    opacity: 0.5;
+}
+.lower-center-one-four svg{
+    text-transform: bold;
+}
+
+/* lower center two grid css */
+.lower-center-two {
+  background-color: #fad9e0;
+  grid-area: lower-center-two;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 4% 2% 4%;
+  position: relative;
+  overflow: hidden;
+}
+.lower-center-two-one{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.lower-center-two-one h1{
+    font-size: x-large;
+    text-transform: bold;
+}
+.lower-center-two-one h4{
+   font-size: medium;
+   opacity: 0.7;
+}
+.lower-btn{
+    width: 40%;
+    height: auto;
+    padding: 1%;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+}
+.lower-center-two-two img{
+    width: 90%;
+    height: auto;
+}
+.lower-center-two-two{
+    width: 30%;
+    z-index: 1;
+}
+.lower-circle{
+    position: absolute;
+     width: 30%;
+    height: 100%;
+    background: linear-gradient(135deg, #ffd3dd 0%, #fba6bc 100%);
+    opacity: 0.3;
+    border-radius: 50%;
+    border: none;
+    top: 30%;
+    left: 70%;
+    z-index: 0;
+}
+
+/* lower right grid css */
+.lower-right {
+  background-color: #ffffff;
+  grid-area: lower-right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lower-right-one{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lower-right-one svg{
+    height: auto;
+    width: 80%;
+}
+.lower-right-one h1{
+    font-size: xxx-large;
+}
+.lower-right-one h2{
+    font-size: x-large;
+    opacity: 0.8;
+}
+
+.lower-right-two{
+    height: 30%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lower-right-two button{
+    width: 70%;
+    height: 50%;
+    border-radius: 15px;
+    border: none;
+    background-color: #fad9e0;
+    font-size: x-large;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: bold;
+    font-weight: 500;
+    gap: 5%;
+}
+.lower-right-two button svg{
+    height: auto;
+    width: 8%;
+}
